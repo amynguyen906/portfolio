@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/amynguyen-website/static/css/main.b19cf2b3.css",
+    "main.js": "/amynguyen-website/static/js/main.72756763.js",
+    "static/js/453.0230e735.chunk.js": "/amynguyen-website/static/js/453.0230e735.chunk.js",
+    "static/media/itunesgallery.png": "/amynguyen-website/static/media/itunesgallery.5967fc66fa4691dc2add.png",
+    "static/media/novelnest.png": "/amynguyen-website/static/media/novelnest.200b99488d47df6bdbc0.png",
+    "index.html": "/amynguyen-website/index.html",
+    "main.b19cf2b3.css.map": "/amynguyen-website/static/css/main.b19cf2b3.css.map",
+    "main.72756763.js.map": "/amynguyen-website/static/js/main.72756763.js.map",
+    "453.0230e735.chunk.js.map": "/amynguyen-website/static/js/453.0230e735.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b19cf2b3.css",
+    "static/js/main.72756763.js"
+  ]
+}
