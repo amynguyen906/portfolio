@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b19cf2b3.css",
+    "main.js": "/static/js/main.5d11d034.js",
+    "static/js/453.0230e735.chunk.js": "/static/js/453.0230e735.chunk.js",
+    "static/media/itunesgallery.png": "/static/media/itunesgallery.5967fc66fa4691dc2add.png",
+    "static/media/novelnest.png": "/static/media/novelnest.200b99488d47df6bdbc0.png",
+    "index.html": "/index.html",
+    "main.b19cf2b3.css.map": "/static/css/main.b19cf2b3.css.map",
+    "main.5d11d034.js.map": "/static/js/main.5d11d034.js.map",
+    "453.0230e735.chunk.js.map": "/static/js/453.0230e735.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b19cf2b3.css",
+    "static/js/main.5d11d034.js"
+  ]
+}
