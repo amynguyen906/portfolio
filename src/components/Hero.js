@@ -1,5 +1,6 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function Hero() { 
 
@@ -13,15 +14,16 @@ export default function Hero() {
   }
 
     return (
-        <div className="hero min-h-screen" style={{backgroundImage: ''}}>
+      <div className="hero min-h-screen" style={{backgroundImage: ''}}>
         <div className="bg-base-100 hero-overlay bg-opacity-60"></div>
-        <div className="hero-content text-center text-accent-content">
-          <div className="max-w-lg">
-            <h1 className="mb-5 text-5xl font-bold">👩‍💻</h1>
-            <h1 className="mb-5 text-4xl font-bold">
+          <div className="hero-content text-center text-accent-content">
+          
+            <div className="max-w-lg animate__animated animate__slideInUp">
+              <h1 className="mb-5 text-5xl font-bold">👩‍💻</h1>
+              <h1 className="mb-5 text-4xl font-bold">
                 — Hi! I'm Amy,{' '}
-            </h1>
-            <div className="mb-5 text-4xl font-bold">
+              </h1>
+                <div className="mb-5 text-4xl font-bold">
           
           {/*
           <TypeAnimation
@@ -37,22 +39,21 @@ export default function Hero() {
             repeat={Infinity}
           />
           */}
-          <h1 className="mb-5 mt-5 text-4xl font-bold mb-5">
+              <h1 className="mb-5 mt-5 text-4xl font-bold mb-5">
                 a Computer Science student,
-            </h1>
-            <h1 className="mb-5 mt-5 text-4xl font-bold mb-5">
+              </h1>
+              <h1 className="mb-5 mt-5 text-4xl font-bold mb-5">
                 based in Athens, GA.
-            </h1>
-        </div>
+              </h1>
+            </div>
 
-        <button className="btn btn-accent mt-5" onClick={() => scrollToSection('about')}>
-  About Me
-</button>
+            <button className="btn btn-accent mt-5" onClick={() => scrollToSection('about')}>
+              About Me
+            </button>
           </div>
+         
         </div>
       </div>
-
-
     );
 
 }

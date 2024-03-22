@@ -11,6 +11,7 @@ import {
   faGithub
 } from '@fortawesome/free-brands-svg-icons';
 import { SpeechBubble } from 'react-kawaii';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function Technology() {
 
@@ -42,10 +43,13 @@ export default function Technology() {
   return (
     <div className="bg-base-100 about py-20 px-36 justify-center text-center items-center" id='technology'>
       {/* Title */}
+      <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
       <h1 className="text-5xl font-semibold p-2 my-10 rounded-lg inline-block bg-accent">Technologies</h1>
+      </AnimationOnScroll>
 
       {/* Two columns layout */}
       <div className='grid grid-cols-2'>
+      <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
       <div>
         <h2 className='text-left text-2xl font-semibold pb-1 pt-2'>Languages</h2>
         <div className="grid gap-2 grid-cols-3">
@@ -87,6 +91,7 @@ export default function Technology() {
           ))}
         </div>
         </div>
+        </AnimationOnScroll>
         <div>
 
         </div>

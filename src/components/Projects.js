@@ -3,6 +3,7 @@ import NovelNest from "../images/novelnest.png";
 import itunes from "../images/itunesgallery.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function Projects() {
 
@@ -19,7 +20,7 @@ export default function Projects() {
             name: 'API iTunes Gallery', 
             type: 'JavaFX App', 
             image: itunes,
-            description: 'A GUI app integrated with Apple\'s iTunes Search API.', 
+            description: 'A GUI app integrated with Apple\'s iTunes Search API. Filters search results using user input and display associated images.  ', 
             technologies: ['Java', 'JavaFX'], 
             github: 'https://github.com/amynguyen906/Gallery-App'
         },
@@ -27,30 +28,36 @@ export default function Projects() {
     return (
         <div className="bg-base-100 about py-20 px-36 flex flex-col items-center" id="projects">
           {/* Title */}
+          <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
           <h1 className="text-5xl font-semibold p-2 my-10 rounded-lg inline-block bg-accent">
         Projects
       </h1>
+      </AnimationOnScroll>
 
+      <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
           <div className= 'grid grid-cols-3 gap-8'>
+          
             {projects.map((project, index) => (
-                <div className="card w-96 bg-base-100 card-shadow">
+                <div className="card w-96 bg-base-100 card-shadow ">
                 <figure className="m-2 rounded-none shadow-none h-64">
                     <img src={project.image} alt={project.name} />
                     </figure>
                 <div className="card-body">
                   <h2 className="card-title">
                     {project.name}
-                    <div className="badge badge-accent">{project.type}</div>
+                    <div className="badge badge-accent p-1 rounded-lg">{project.type}</div>
                   </h2>
-                  <p className="mb-6">{project.description}</p>
-                  <div className="tooltip tooltip-accent" data-tip="Github Repository">
+                  <p className="mb-3">{project.description}</p>
+                  <div>
                     <a href={project.github} target="_blank" className="">
-                <FontAwesomeIcon icon={faGithub} className="text-3xl text-left" />
-            </a>
-        </div>
-                  <div className="card-actions justify-end mt-3">
+                    <div className="tooltip tooltip-accent tooltip-right text-left" data-tip="Github Repository">
+                      <FontAwesomeIcon icon={faGithub} className="text-3xl text-left" />
+                      </div>
+                    </a>
+                  </div>
+                  <div className="card-actions justify-start mt-3">
                     {project.technologies.map((tech, i ) => (
-                        <div className="badge badge-outline p-1.5">{tech}</div> 
+                        <div className="badge badge-accent rounded-lg p-1">{tech}</div> 
                     ))}
                   </div>
                 </div>
@@ -61,12 +68,14 @@ export default function Projects() {
 
 
             ))}
+          
 
 
 
 
 
           </div>
+          </AnimationOnScroll>
         </div>
       );
 }   
