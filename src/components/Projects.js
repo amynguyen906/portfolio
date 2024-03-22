@@ -11,7 +11,7 @@ export default function Projects() {
             name: 'NovelNest', 
             type: 'Website', 
             image: NovelNest,
-            description: 'MERN application for book exchange MERN application for book exchange MERN application for book exchange', 
+            description: 'A book exchange web application using the MERN stack. Makes it easily accessible for users to add, edit, and delete book listings.', 
             technologies: ['ReactJS', 'ExpressJS', 'NodeJS', 'MongoDB'], 
             github: 'https://github.com/amynguyen906/NovelNest'
         },
@@ -19,7 +19,7 @@ export default function Projects() {
             name: 'API iTunes Gallery', 
             type: 'JavaFX App', 
             image: itunes,
-            description: 'A GUI app integrated with Apple\'s iTunes Search API', 
+            description: 'A GUI app integrated with Apple\'s iTunes Search API.', 
             technologies: ['Java', 'JavaFX'], 
             github: 'https://github.com/amynguyen906/Gallery-App'
         },
