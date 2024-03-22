@@ -1,4 +1,5 @@
 import React from 'react';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function Navbar() {
 
@@ -13,7 +14,7 @@ export default function Navbar() {
 
 
     return(
-        <div className="navbar fixed z-50 bg-base-100 border-b border-base300 border-solid border-1 px-36">
+        <div className="navbar fixed z-50 bg-base-100 border-b border-base300 border-solid border-1 px-36 animate__animated animate__slideInDown">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

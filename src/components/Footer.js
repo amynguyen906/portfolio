@@ -1,5 +1,6 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function Footer() { 
 

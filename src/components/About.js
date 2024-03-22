@@ -2,18 +2,23 @@ import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import './../App.css';
 import {Cat} from 'react-kawaii';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function About() { 
 
 return (
     <div className="bg-base-100 about py-20 text-center " id="about">
+      
+      <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
       <h1 className="text-5xl font-semibold p-2 my-10 rounded-lg inline-block bg-accent">
         About Me
       </h1>
+      </AnimationOnScroll>
       
       <div className="columns-2  gap-8 flex-col lg:flex-row-reverse ">
         
       <div class="justify-center pl-36 pr-12 pb-10 pt-5">
+      <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
   <div class="text-left">
     <p class="mb-8">
       Hello! I'm Amy and I'm a 3rd year Computer Science major at UGA with an interest in full-stack development. 
@@ -31,10 +36,11 @@ return (
 
     </div>
   </div>
+  </AnimationOnScroll>
 </div>
 
     
-  
+<AnimationOnScroll animateIn="animate__slideInRight" animateOnce={true}>
   <div className="mockup-code rounded-tr-none rounded-br-none bg-base-300 text-left text-accent-content ps-10 pb-5 pe-10 w-auto"> 
   <pre data-prefix="$"><code>./aboutMe.out</code></pre> 
   <br />
@@ -45,9 +51,8 @@ return (
   <pre className=""><code>School: University of Georgia</code></pre>
   <br />
   <pre className=""><code>Hometown: Lilburn, GA</code></pre>
-
-  
 </div>
+</AnimationOnScroll>
           
     <div>
       
