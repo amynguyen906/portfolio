@@ -9,5 +9,6 @@ Visit here: https://amynguyen906.github.io/portfolio/
 ## Currently
 
 - Working on making the site responsive for all devices
+- Adding more to the website
 
 
