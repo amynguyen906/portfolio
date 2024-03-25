@@ -5,8 +5,9 @@ import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function Contact() {
-    const githubLink = 'ds'
-    const linkedinLink = 'ds'
+    const githubLink = 'https://github.com/amynguyen906';
+    const linkedinLink = 'https://www.linkedin.com/in/amynguyen906/';
+    const email = 'an61833@uga.edu';
 
   return (
     <div className="bg-base-100 about py-20 px-36 flex flex-col items-center" id='contact'>
@@ -24,7 +25,7 @@ export default function Contact() {
       <div className="flex flex-row items-center mt-10 space-x-8">
         {/* Email icon with tooltip */}
         <div className="tooltip tooltip-accent" data-tip="Email">
-            <a href='' target="_blank">
+          <a href={`mailto:${email}`} target="_blank">
                 <FontAwesomeIcon icon={faEnvelope} className="text-3xl" />
             </a>
         </div>

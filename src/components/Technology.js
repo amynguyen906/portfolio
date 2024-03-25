@@ -1,43 +1,30 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-  faJava, 
-  faHtml5, 
-  faCss3, 
-  faJs, 
-  faNodeJs, 
-  faReact,
-  faGit,
-  faGithub
-} from '@fortawesome/free-brands-svg-icons';
-import { SpeechBubble } from 'react-kawaii';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function Technology() {
 
   const languages = [
-    { name: "Java", icon: faJava },
-    { name: "C", icon: faJava },
-    { name: "C++", icon: faJava },
-    { name: "HTML", icon: faHtml5 },
-    { name: "CSS", icon: faCss3 },
-    { name: "JavaScript", icon: faJs },
+    { name: "Java", icon: 'devicon-java-plain' },
+    { name: "C", icon: 'devicon-c-plain'},
+    { name: "C++", icon: 'devicon-cplusplus-plain' },
+    { name: "HTML", icon: 'devicon-html5-plain' },
+    { name: "CSS", icon: 'devicon-css3-plain' },
+    { name: "JavaScript", icon: 'devicon-javascript-plain' },
   ];
   
   const frontend = [
-    { name: "React.js", icon: faReact },
-    // Replace the following with the correct icons
-    { name: "DaisyUI", icon: faReact }, 
+    { name: "React.js", icon: 'devicon-react-original' },
+    { name: "Tailwind CSS", icon: 'devicon-tailwindcss-original' }, 
   ];
   
   const backend = [
-    { name: "Node.js", icon: faNodeJs },
-    { name: "Express.js", icon: faNodeJs}, 
-    { name: "MongoDB", icon: faNodeJs }, 
+    { name: "Node.js", icon: 'devicon-nodejs-plain' },
+    { name: "Express.js", icon: 'devicon-express-original'}, 
+    { name: "MongoDB", icon: 'devicon-mongodb-plain' }, 
   ];
   
   const tools = [
-    { name: "Git", icon: faGit }, 
+    { name: "Git", icon: 'devicon-git-plain' }, 
   ];
 
   return (
@@ -55,7 +42,7 @@ export default function Technology() {
         <div className="grid gap-2 grid-cols-3">
           {languages.map((tech, index) => (
             <div key={index} className="flex items-center justify-left p-4 bg-base-300 rounded-lg inline-block">
-              <FontAwesomeIcon icon={tech.icon} size="xl" className="text-primary-content" />
+              <i class={tech.icon} style={{ fontSize: "30px" }}></i>
               <p className="ml-3 text-primary-content">{tech.name}</p>
             </div>
           ))} 
@@ -65,7 +52,7 @@ export default function Technology() {
         <div className="grid gap-2 grid-cols-3">
           {frontend.map((tech, index) => (
             <div key={index} className="flex items-center justify-left p-4 bg-base-300 rounded-lg inline-block">
-              <FontAwesomeIcon icon={tech.icon} size="xl" className="text-primary-content" />
+              <i class={tech.icon} style={{ fontSize: "30px" }}></i>
               <p className="ml-3 text-primary-content">{tech.name}</p>
             </div>
           ))}
@@ -75,7 +62,7 @@ export default function Technology() {
         <div className="grid gap-2 grid-cols-3">
           {backend.map((tech, index) => (
             <div key={index} className="flex items-center justify-left p-4 bg-base-300 rounded-lg inline-block">
-              <FontAwesomeIcon icon={tech.icon} size="xl" className="text-primary-content" />
+              <i class={tech.icon} style={{ fontSize: "30px" }}></i>
               <p className="ml-3 text-primary-content">{tech.name}</p>
             </div>
           ))}
@@ -85,7 +72,7 @@ export default function Technology() {
         <div className="grid gap-2 grid-cols-3">
           {tools.map((tech, index) => (
             <div key={index} className="flex items-center justify-left p-4 bg-base-300 rounded-lg inline-block">
-              <FontAwesomeIcon icon={tech.icon} size="xl" className="text-primary-content" />
+              <i class={tech.icon} style={{ fontSize: "30px" }}></i>
               <p className="ml-3 text-primary-content">{tech.name}</p>
             </div>
           ))}
