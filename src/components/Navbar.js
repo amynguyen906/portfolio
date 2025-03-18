@@ -3,7 +3,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function Navbar() {
 
-  const resumeUrl = 'https://drive.google.com/file/d/1-Zii2eydM42JzHAXzLeR4XRVdmf8udUS/view?usp=sharing';
+  const resumeUrl = 'https://drive.google.com/file/d/1SW9hRil1hZhz0Uq3WIA4dHx4l6UuqVB7/view?usp=sharing';
 
   function scrollToSection(sectionId) {
     const section = document.getElementById(sectionId);
@@ -28,13 +28,14 @@ export default function Navbar() {
   <ul className="menu menu-horizontal px-1">
   <li><button className="btn btn-ghost" onClick={() => scrollToSection('about')}>About</button></li>
   <li><button className="btn btn-ghost" onClick={() => scrollToSection('technology')}>Technology</button></li>
+  <li><button className="btn btn-ghost" onClick={() => scrollToSection('experience')}>Experience</button></li>
   <li><button className="btn btn-ghost" onClick={() => scrollToSection('projects')}>Projects</button></li>
   <li><button className="btn btn-ghost" onClick={() => scrollToSection('contact')}>Contact</button></li>
 </ul>
 
   </div>
   <div className="navbar-end">
-  <a className="btn btn-xs sm:btn-sm md:btn-md bg-accent" onClick={() => window.open('https://drive.google.com/file/d/1-Zii2eydM42JzHAXzLeR4XRVdmf8udUS/view?usp=sharing', '_blank')}>
+  <a className="btn btn-xs sm:btn-sm md:btn-md bg-accent" onClick={() => window.open('https://drive.google.com/file/d/1SW9hRil1hZhz0Uq3WIA4dHx4l6UuqVB7/view?usp=sharing', '_blank')}>
     Resume</a>
 
   </div>

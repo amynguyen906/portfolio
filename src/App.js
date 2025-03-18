@@ -7,6 +7,7 @@ import Technology from './components/Technology.js';
 import Projects from './components/Projects.js';
 import Contact from './components/Contact.js';
 import Footer from './components/Footer.js';
+import Experience from './components/Experience.js'
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <Navbar />
     <Hero />
     <About />
+    <Experience />
     <Technology />
     <Projects />
     <Contact />
