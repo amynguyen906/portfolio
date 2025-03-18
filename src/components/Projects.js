@@ -4,17 +4,26 @@ import itunes from "../images/itunesgallery.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import MovieEbooking from "../images/movieebooking.png";
 
 export default function Projects() {
 
     const projects = [
         {
-            name: 'NovelNest', 
-            type: 'Website', 
-            image: NovelNest,
-            description: 'A book exchange web application created with the MERN stack. Makes it easily accessible for users to add, edit, and delete book listings.', 
-            technologies: ['ReactJS', 'ExpressJS', 'NodeJS', 'MongoDB'], 
-            github: 'https://github.com/amynguyen906/NovelNest'
+          name: 'Movie e-Booking', 
+          type: 'Website', 
+          image: MovieEbooking,
+          description: 'A movie ticket purchasing web application created using React and Springboot. Allows users to browse movies, select showtimes, and purchase tickets.', 
+          technologies: ['ReactJS', 'Java', 'Springboot', 'MySQL'], 
+          github: 'https://github.com/ljason18/SWE-Project'
+        },
+        {
+          name: 'Novel Nest', 
+          type: 'Website', 
+          image: NovelNest,
+          description: 'A book exchange web application created with the MERN stack. Makes it easily accessible for users to add, edit, and delete book listings.', 
+          technologies: ['ReactJS', 'ExpressJS', 'NodeJS', 'MongoDB'], 
+          github: 'https://github.com/amynguyen906/NovelNest'
         },
         {
             name: 'API iTunes Gallery', 

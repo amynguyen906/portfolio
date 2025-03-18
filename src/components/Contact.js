@@ -7,7 +7,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 export default function Contact() {
     const githubLink = 'https://github.com/amynguyen906';
     const linkedinLink = 'https://www.linkedin.com/in/amynguyen906/';
-    const email = 'an61833@uga.edu';
+    const email = 'anguyen090602@gmail.com';
 
   return (
     <div className="bg-base-100 about py-20 px-36 flex flex-col items-center" id='contact'>
@@ -32,7 +32,9 @@ export default function Contact() {
       
         {/* LinkedIn icon with tooltip */}
         <div className="tooltip tooltip-accent" data-tip="LinkedIn">
-          <a href={linkedinLink} target="_blank"></a><FontAwesomeIcon icon={faLinkedin} className="text-3xl" />
+          <a href={linkedinLink} target="_blank">
+          <FontAwesomeIcon icon={faLinkedin} className="text-3xl" />
+          </a>
         </div>
        
      

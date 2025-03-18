@@ -3,6 +3,7 @@ import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 export default function Technology() {
 
+  {/* */}
   const languages = [
     { name: "Java", icon: 'devicon-java-plain' },
     { name: "C", icon: 'devicon-c-plain'},
@@ -10,6 +11,7 @@ export default function Technology() {
     { name: "HTML", icon: 'devicon-html5-plain' },
     { name: "CSS", icon: 'devicon-css3-plain' },
     { name: "JavaScript", icon: 'devicon-javascript-plain' },
+    { name: "Python", icon: 'devicon-python-plain' },
   ];
   
   const frontend = [
@@ -21,11 +23,13 @@ export default function Technology() {
     { name: "Node.js", icon: 'devicon-nodejs-plain' },
     { name: "Express.js", icon: 'devicon-express-original'}, 
     { name: "MongoDB", icon: 'devicon-mongodb-plain' }, 
+    { name: "Flask", icon: 'devicon-flask-original' }, 
   ];
   
   const tools = [
     { name: "Git", icon: 'devicon-git-plain' }, 
   ];
+
 
   return (
     <div className="bg-base-100 about py-20 px-36 justify-center text-center items-center" id='technology'>
@@ -33,17 +37,22 @@ export default function Technology() {
       <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
       <h1 className="text-5xl font-semibold p-2 my-10 rounded-lg inline-block bg-accent">Technologies</h1>
       </AnimationOnScroll>
-
+      
       {/* Two columns layout */}
-      <div className='grid grid-cols-2'>
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-8 mt-6'>
       <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
+        
+      
+
+        {/* left side */}
+        
       <div>
         <h2 className='text-left text-2xl font-semibold pb-1 pt-2'>Languages</h2>
         <div className="grid gap-2 grid-cols-3">
           {languages.map((tech, index) => (
-            <div key={index} className="flex items-center justify-left p-4 bg-base-300 rounded-lg inline-block">
+            <div key={index} className="flex items-center justify-left p-4 bg-base-300 rounded-lg inline-block w-full break-words flex-wrap">
               <i class={tech.icon} style={{ fontSize: "30px" }}></i>
-              <p className="ml-3 text-primary-content">{tech.name}</p>
+              <p className="ml-3 text-primary-content sm:text-xs">{tech.name}</p>
             </div>
           ))} 
         </div>
@@ -51,19 +60,30 @@ export default function Technology() {
         <h2 className='text-left text-2xl font-semibold pb-1 pt-2'>Frontend</h2>
         <div className="grid gap-2 grid-cols-3">
           {frontend.map((tech, index) => (
-            <div key={index} className="flex items-center justify-left p-4 bg-base-300 rounded-lg inline-block">
+            <div key={index} className="flex items-center justify-left p-4 bg-base-300 rounded-lg inline-block w-full break-words flex-wrap">
               <i class={tech.icon} style={{ fontSize: "30px" }}></i>
-              <p className="ml-3 text-primary-content">{tech.name}</p>
+              <p className="ml-3 text-primary-content sm:text-xs">{tech.name}</p>
             </div>
           ))}
         </div>
 
+        
+
+        </div>
+        </AnimationOnScroll>
+        
+
+       
+
+        
+        <div> {/* right side*/}
+        <AnimationOnScroll animateIn="animate__fadeIn" animateOnce={true}>
         <h2 className='text-left text-2xl font-semibold pb-1 pt-2'>Backend</h2>
         <div className="grid gap-2 grid-cols-3">
           {backend.map((tech, index) => (
-            <div key={index} className="flex items-center justify-left p-4 bg-base-300 rounded-lg inline-block">
+            <div key={index} className="flex items-center justify-left p-4 bg-base-300 rounded-lg inline-block w-full break-words flex-wrap">
               <i class={tech.icon} style={{ fontSize: "30px" }}></i>
-              <p className="ml-3 text-primary-content">{tech.name}</p>
+              <p className="ml-3 text-primary-content sm:text-xs">{tech.name}</p>
             </div>
           ))}
         </div>
@@ -77,11 +97,14 @@ export default function Technology() {
             </div>
           ))}
         </div>
-        </div>
-        </AnimationOnScroll>
-        <div>
 
-        </div>
+        </AnimationOnScroll>
+
+
+      </div> {/* right side*/}
+       
+      
+        
       </div>
       </div>
   );
