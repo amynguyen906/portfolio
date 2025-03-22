@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.d57c6caf.css",
-    "main.js": "/portfolio/static/js/main.2d54527d.js",
+    "main.css": "/portfolio/static/css/main.578261e1.css",
+    "main.js": "/portfolio/static/js/main.0d9ea411.js",
     "static/js/453.0230e735.chunk.js": "/portfolio/static/js/453.0230e735.chunk.js",
     "static/media/itunesgallery.png": "/portfolio/static/media/itunesgallery.5967fc66fa4691dc2add.png",
+    "static/media/capstone.png": "/portfolio/static/media/capstone.dc053f3fe6c7135a8a48.png",
     "static/media/novelnest.png": "/portfolio/static/media/novelnest.200b99488d47df6bdbc0.png",
     "static/media/movieebooking.png": "/portfolio/static/media/movieebooking.10d7d09651b93834d04a.png",
     "index.html": "/portfolio/index.html",
-    "main.d57c6caf.css.map": "/portfolio/static/css/main.d57c6caf.css.map",
-    "main.2d54527d.js.map": "/portfolio/static/js/main.2d54527d.js.map",
+    "main.578261e1.css.map": "/portfolio/static/css/main.578261e1.css.map",
+    "main.0d9ea411.js.map": "/portfolio/static/js/main.0d9ea411.js.map",
     "453.0230e735.chunk.js.map": "/portfolio/static/js/453.0230e735.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d57c6caf.css",
-    "static/js/main.2d54527d.js"
+    "static/css/main.578261e1.css",
+    "static/js/main.0d9ea411.js"
   ]
 }
