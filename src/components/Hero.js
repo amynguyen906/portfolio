@@ -20,7 +20,7 @@ export default function Hero() {
           
             <div className="max-w-lg animate__animated animate__slideInUp">
               <h1 className="mb-5 text-5xl font-bold">👩‍💻</h1>
-              <h1 className="mb-5 text-4xl font-bold">
+              <h1 className="mb-5 text-2xl md:text-4xl font-bold">
                 — Hi! I'm Amy,{' '}
               </h1>
                 <div className="mb-5 text-4xl font-bold">
@@ -39,10 +39,10 @@ export default function Hero() {
             repeat={Infinity}
           />
           */}
-              <h1 className="mb-5 mt-5 text-4xl font-bold mb-5">
+              <h1 className="mb-5 mt-5 text-2xl md:text-4xl font-bold mb-5">
                 a Computer Science student,
               </h1>
-              <h1 className="mb-5 mt-5 text-4xl font-bold mb-5">
+              <h1 className="mb-5 mt-5 text-2xl md:text-4xl font-bold mb-5">
                 based in Athens, GA.
               </h1>
             </div>

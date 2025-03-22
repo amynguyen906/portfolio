@@ -33,7 +33,7 @@ export default function About() {
             Experience
         </h1>
       
-        <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical pl-36 pr-36">
+        <ul className="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical p-10 md:pl-36 md:pr-36">
 
         <li>
     <hr />
@@ -78,7 +78,7 @@ export default function About() {
     </div>
     <div className="timeline-start mb-10 md:text-end">
       <time className="font-mono italic">April 2024 - September 2024</time>
-      <div className="text-lg font-black italic">Web Development Assistant</div>
+      <div className="text-lg font-black">Web Development Assistant</div>
       <div className="text-lg  italic">Friends for a Nonviolent World</div>
       <hr></hr>
       <div className="mb-10 md:text-start space-y-4">
